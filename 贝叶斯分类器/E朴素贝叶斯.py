@@ -19,12 +19,7 @@ class NaiveBayesModel:
         self.vars = []
         self.classes = None
 
-    def load(self, path):
-        pass
-
-    def save(self, path):
-        pass
-
+    # 正态分布
     @staticmethod
     def calPossibility(mean, var, x: float):
         # x应该是一个数值
