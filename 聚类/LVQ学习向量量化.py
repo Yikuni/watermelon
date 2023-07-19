@@ -5,7 +5,7 @@ from sklearn.metrics import f1_score
 
 
 class LVQModel:
-    def __init__(self, ):
+    def __init__(self):
         self.P = None
         self.T = None
 
