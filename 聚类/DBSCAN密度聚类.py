@@ -112,6 +112,8 @@ def main():
     model = DBSCANModel(1.6, 4)
     model.fit(data)
     colors = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w']
+    if len(model.C) > 8:
+        print("聚类簇数大于8!")
     for k, Ck in enumerate(model.C):
         plt.scatter(Ck[:, 0], Ck[:, 1], color=colors[k])
     plt.show()
