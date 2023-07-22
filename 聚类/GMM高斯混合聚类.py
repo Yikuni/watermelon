@@ -33,7 +33,6 @@ class GMM:
                 # 分母
                 denom = 0
                 for l in range(self.k):
-                    # print(alpha[l] * GMM.multivariate_normal(train[j], means[l], sigma[l]))
                     denom += alpha[l] * GMM.multivariate_normal(train[j], means[l], sigma[l])
                 for i in range(self.k):
                     gammas[j, i] = GMM.multivariate_normal(train[j], means[i], sigma[i]) / denom
