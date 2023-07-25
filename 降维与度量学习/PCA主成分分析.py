@@ -3,15 +3,13 @@ from matplotlib import pyplot as plt
 from sklearn.datasets import load_iris
 
 
-'''
-不知道是哪里错了, 和sklearn的PCA稍微有点不同
-data: 数据集
-d_: d', 降维后的维度
-t: 重构阈值, d_设置后无效
-'''
-
-
 def PCA(data, d_=0, t=0.):
+    """
+    不知道是哪里错了, 和sklearn的PCA稍微有点不同
+    data: 数据集
+    d_: d', 降维后的维度
+    t: 重构阈值, d_设置后无效
+    """
     X = np.array(data)
     d = X.shape[1]
     if d < d_:
