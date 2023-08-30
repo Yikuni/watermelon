@@ -9,6 +9,15 @@ def getNeighbors(X, k, i):
 
 
 def LLE(data, k, d_=0, t=0.):
+    """
+    LLE降维, 和sklearn结果不一样
+    公式10.28不知道为什么要标一个-1
+    :param data: X
+    :param k: 近邻参数k
+    :param d_: 目标维数d'
+    :param t:  同PCA
+    :return:   降维后的矩阵
+    """
     X = np.array(data)
     m = X.shape[0]
 

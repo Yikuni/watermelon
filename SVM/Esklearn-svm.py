@@ -24,5 +24,5 @@ print(result)
 # 进行评估
 print("F-score: {0:.2f}".format(f1_score(result, y_test, average='micro')))
 
-plt.scatter(x_test[:, 0], x_test[:, 1], color=np.where(result == -1, 'r', 'g'))
+plt.scatter(x_test[:, 2], x_test[:, 3], color=np.where(result == -1, 'r', 'g'))
 plt.show()
