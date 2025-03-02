@@ -2,3 +2,5 @@
 venu/
 test/
 **/test.py
+**/data/
+**/model/

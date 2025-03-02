@@ -1,9 +1,6 @@
-numpy~=1.24.3
-matplotlib~=3.7.1
-scikit-learn~=1.2.2
-pgmpy~=0.1.23
-scipy~=1.10.1
-tensorflow==2.9.2
-tensorflow-probability==0.17.0
-tensorflow_datasets
+d2l==0.17.6
+matplotlib
+scikit-learn
+pgmpy
+scipy
 pandas
